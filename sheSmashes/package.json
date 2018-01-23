@@ -4,6 +4,7 @@
   "description": "e2e tests for sheSmashes",
   "scripts": {
     "test": "wdio wdio.conf.js",
+    "suit": "wdio wdio.conf.js --suite login",
     "report": "allure generate . --clean",
     "server": "selenium-standalone start"
   },
@@ -12,6 +13,8 @@
   "devDependencies": {
     "@types/node": "^9.3.0",
     "allure-commandline": "^2.5.0",
+    "mocha": "^5.0.0",
+    "mocha-parallel-tests": "^1.2.10",
     "selenium-server-standalone": "^2.53.1",
     "wdio-allure-reporter": "^0.2.0",
     "wdio-mocha-framework": "^0.5.12",
@@ -24,6 +27,7 @@
     "exports": "0.0.1",
     "isvisible": "^1.0.6",
     "spec": "^1.0.1",
+    "system-sleep": "^1.3.6",
     "test": "^0.6.0"
   }
 }

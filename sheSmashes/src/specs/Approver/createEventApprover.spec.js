@@ -1,9 +1,9 @@
 var expect = require('chai').expect;
-var loginPageObj = require('../pageObject/login.page');
-var CreateEventPageObj = require('../pageObject/createEvent.page');
+var loginPageObj = require('../../pageObject/login.page');
+var CreateEventPageObj = require('../../pageObject/createEvent.page');
 
 describe('Approver - Create Event', function () {
-    it('User should be able to create a new event successfully', function () {
+    it('Admin should be able to create a new event successfully', function () {
         loginPageObj.open(); // Launch the site
         loginPageObj.username.setValue("approver1"); // Enter username
         loginPageObj.password.setValue("approver1"); // Enter password

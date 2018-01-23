@@ -7,7 +7,7 @@ var dashboardPageObj = Object.create(page, {
     LogoutBtn : { get: function () { return $(".//span[text()='Initiatives']//following::button[2]/div");} },
     myProgressSection : { get: function () { return $("(.//div[text()='My Progress'])[1]//following::div[1]");} },
     eventsTimelineSection : { get: function () { return $(".//div[text()='Events Timeline']//following::div[1]");} },
-    firstEventInTimeline : { get: function () { return $(".//*[contains(@href,'/eventDetails/1')]");} },
+    firstEventInTimeline : { get: function () { return $(".//div[text()='Events Timeline']//following::section/div[2]/div[2]/div[3]/b");} },
     eventDetails : { get: function () { return $("/.//*[@class='event-details']");} },
 });
 

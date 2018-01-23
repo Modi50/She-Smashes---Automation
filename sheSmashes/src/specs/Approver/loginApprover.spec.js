@@ -1,18 +1,13 @@
 var assert = require('chai').assert;
-var loginPageObj = require('../pageObject/login.page');
-var expectedErrorMsg = "Please enter correct username/password";
-var actualErrorMsg;
+var loginPageObj = require('../../pageObject/login.page');
 
  describe('Approver - Login with wrong credentials', function () {
-     it('User should not be able to login', function () {
+     it('Admin should not be able to login', function () {
          loginPageObj.open(); // Launch the site
-         loginPageObj.username.setValue("approver"); // Enter username
-         loginPageObj.password.setValue("approver"); // Enter password
+         loginPageObj.username.setValue("approver1"); // Enter username
+         loginPageObj.password.setValue("approver1"); // Enter password
          loginPageObj.LoginBtn.click(); // Click on login button
-         loginPageObj.OK.waitForEnabled(5000); // Wait 
-         actualErrorMsg = loginPageObj.OK.getText(); // Get the error message
-         assert.notEqual(actualErrorMsg, expectedErrorMsg, "==Error message is not correct !");   // Compare the messages
-         loginPageObj.OK.click(); // Close the overlay by clicking on 'OK' button
+         
      }); 
  });
 

@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var loginPageObj = require('../pageObject/login.page');
+var loginPageObj = require('../../pageObject/login.page');
 var expectedErrorMsg = "Please enter correct username/password";
 var actualErrorMsg;
 
