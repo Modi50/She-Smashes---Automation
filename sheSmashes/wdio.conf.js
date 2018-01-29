@@ -16,7 +16,8 @@ exports.config = {
         
     exclude: [
         './src/specs/**/createEvent.spec.js',
-        './src/specs/**/createEventApprover.spec.js'
+        './src/specs/**/createEventApprover.spec.js',
+        './src/specs/**/approveEvent.spec.js'
     ],
 
   //  suites: {
